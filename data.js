@@ -28,7 +28,8 @@ export const data = LandscapeSchema.make({
 	AppTarget: {
 		Platform: { data: ['Browser', 'Node', 'iOS', 'Android', 'macOS', 'WASM', 'Linux'] },
 		LanguageSDK: { data: ['TypeScript', 'JavaScript', 'Rust', 'Python'] },
-		FrameworkIntegrations: { data: ['React', 'Svelte'] }
+		FrameworkIntegrations: { data: ['React', 'Svelte'] },
+		ClientBundleSize: { data: '4 kB compressed', comment: 'not including Automerge or Yjs dependencies' }
 	},
 	Networking: {
 		Protocol: { data: ['WebSockets'] },
